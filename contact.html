@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=320, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+            <div class="container">
+                <div class="header-comp">
+                    <img class="logo" src="images/logo.png" alt="logo" width="226" height="113">
+                    <div class="search-items">
+                        <div class="wrapper">
+                            <input class="search" type="search" placeholder="Search">
+                            <svg class="search-icon">
+                                <use href="images/icons.svg#icon-search"></use>
+                            </svg>
+                        </div>
+                    </div>
+            
+                    <nav class="navbar bg-light navbar-expand-xl navigation">
+                        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
+                            <span class="navbar-toggler-icon">
+                                <svg class="nav-icon">
+                                    <use href="images/icons.svg#icon-nav"></use>
+                                </svg>
+
+                    
+                            </span>
+                        </button>
+                        <div id="my-nav" class="collapse navbar-collapse">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active menu-list-items">
+                                    <a class="nav-link menu-list-item-links link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item active menu-list-items">
+                                    <a class="nav-link menu-list-item-links link" href="">Company Profile</a>
+                                </li>
+                                <li class="nav-item active menu-list-items">
+                                    <a class="nav-link menu-list-item-links link" href="tomato-all.html">Products</a>
+                                </li>
+                                <li class="nav-item active menu-list-items">
+                                    <a class="nav-link menu-list-item-links link" href="">Services</a>
+                                </li>
+                                <li class="nav-item active menu-list-items">
+                                    <a class="nav-link menu-list-item-links link" href="">R & D</a>
+                                </li>
+                                <li class="nav-item active menu-list-items">
+                                    <a class="nav-link menu-list-item-links link" href="">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+    <!-- MAIN -->
+    <main>
+        <!-- HERO -->
+        <section class="contact-us-hero hero-bg container-fluid">
+            <img src="images/contact-us-hero-bg.jpg" alt="contact" width="100%">
+        </section>
+        <!-- HERO -->
+
+
+        <!-- CONTACT-US-FORM -->
+        <section class="contact-us-form container">
+            <h2 class="form-title">Contact us</h2>
+            <svg class="x-icons">
+                <use href="images/icons.svg#icon-x"></use>
+            </svg>
+
+            <form action="get">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <p class="input-name">Name *</p>
+                        <input class="input-class" type="text">
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-12 col-lg-7">
+                        <p class="input-name">You are a</p>
+                        <select class="input-class" name="you-are-a" id="you-are-a">
+                            <option value="seed">seed producer</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <p class="input-name">Company Name</p>
+                        <input class="input-class" type="text">
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-12 col-lg-7">
+                        <p class="input-name">If other, please specify</p>
+                        <input class="input-class" type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <p class="input-name">Position</p>
+                        <input class="input-class" type="text">
+                        <p class="input-name">City</p>
+                        <input class="input-class" type="text">
+                        <p class="input-name">Country</p>
+                        <input class="input-class" type="text">
+                        <p class="input-name">Telephone</p>
+                        <input class="input-class" type="text">
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-12 col-lg-7">
+                        <p class="input-name text-area-class">You are interested in</p>
+                        <textarea class="input-class" style="height: 390px;" name="interested" id="interested" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="row align-items-end last-row">
+                    <div class="col-12 col-lg-4">
+                        <p class="input-name">Email *</p>
+                        <input class="input-class form-end" type="email">
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-12 col-lg-4">
+                        <p class="input-name">Please type this code</p>
+                        <div class="capcha">
+                            <img class="capcha-item" src="images/capcha.png" alt="capcha">
+                            <input class="input-class form-end" type="text">
+                        </div>
+                    </div>
+                    <div class="col-col-12 col-lg-3">
+                        <button class="form-button">Send Message</button>
+                    </div>
+                </div>
+
+
+            </form>
+        </section>
+        <!-- CONTACT-US-FORM -->
+
+
+        <!-- ADDRESS INFO -->
+        <section class="address-info">
+            <h3 class="address-title">Our Address</h3>
+            <p class="address-text">
+                AGRIDERA Seeds & Agriculture Ltd.<br>
+                P.O Box 103,<br>
+                Gedera 70750, Israel.<br>
+                Telephone: <a href="tel:+97289449222" class="address-tel">+972 8 944 9222</a>
+            </p>
+        </section>
+        <!-- ADDRESS INFO -->
+    </main>
+    <!-- MAIN -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9 container-fluid">
+                    <ul class="menu-footer-list list row">
+                        <li class="menu-footer-list-items col-lg-1">
+                            <a class="menu-footer-links link" href="">PROFILE</a>
+                        </li>
+                        <li class="menu-footer-list-items col-lg-1">
+                            <a class="menu-footer-links link" href="">MANAGEMENT</a>
+                        </li>
+                        <li class="menu-footer-list-items col-lg-1">
+                            <a class="menu-footer-links link" href="">PRODUCTS</a>
+                        </li>
+                        <li class="menu-footer-list-items col-lg-1">
+                            <a class="menu-footer-links link" href="">R&D</a>
+                        </li>
+                        <li class="menu-footer-list-items col-lg-1">
+                            <a class="menu-footer-links link" href="">LINKS</a>
+                        </li>
+                        <li class="menu-footer-list-items col-lg-1">
+                            <a class="menu-footer-links link" href="">SITEMAP</a>
+                        </li>
+                        <li class="menu-footer-list-items col-lg-1">
+                            <a class="menu-footer-links link" href="">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-12 col-lg-3">
+                    <ul class="social-list list">
+                        <li class="social-list-items">
+                            <a class="social-links">
+                                <svg class="social-icons">
+                                    <use href="images/icons.svg#icon-in"></use>
+                                </svg>
+                            </a>
+    
+                        </li>
+                        <li class="social-list-items">
+                            <a class="social-links">
+                                <svg class="social-icons">
+                                    <use href="images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+    
+                        </li>
+                        <li class="social-list-items">
+                            <a class="social-links">
+                                <svg class="social-icons">
+                                    <use href="images/icons.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+    
+                        </li>
+                        <li class="social-list-items">
+                            <a class="social-links">
+                                <svg class="social-icons">
+                                    <use href="images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+    
+                        </li>
+                        <li class="social-list-items">
+                            <a class="social-links">
+                                <svg class="social-icons">
+                                    <use href="images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+    
+        <p class="copy">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+    </footer>
+    <!-- FOOTER -->
+</body>
+
+</html>

@@ -1,0 +1,674 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-SemiBold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-ExtraLight.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Light.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-ExtraBold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Medium.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Black.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Thin.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    /* GENERAL COLORS */
+    --x-ixons-color: #57984C;
+
+
+
+    /* ===== HOMEPAGE ===== */
+
+    /* header */
+        --header-menu-search-color: #324950;
+
+    /* hero */
+    --hero-title-color: #735440;
+    --hero-button-color: #57984C;
+    --hero-button-text-color: #FFFFFF;
+
+    /* products */
+    --products-color: #324950;
+
+    /* vision */
+    --vision-text-color: #324950;
+
+    /* activities */
+    --activities-color: #57984C;
+    --activities-descr-color: #324950;
+
+
+
+
+    /* ===== TOMATO ALL ===== */
+    /* tomato info */
+    --tomato-info-text-color: #324950;
+
+    /* tomato cards */
+    --tomato-cards-title-color: #324950;
+
+    /* tomato links card */
+    --tomato-links-cards-text-color:#57984C;
+
+}
+
+
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: #EDEDED;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p,div{
+    margin: 0;
+    padding: 0;
+}
+
+.list{
+    list-style: none;
+}
+
+.link, .link:hover, .link:focus {
+    text-decoration: none;
+}
+
+
+.background-hero {
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover  ;
+    padding-top: 20px;
+
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.x-icons{
+    width: 47.24px;
+        height: 6.24px;
+        fill: var(--x-ixons-color) ;
+}
+
+.hero-bg{
+    padding: 0;
+}
+
+/* ============================= HOMEPAGE START ============================= */
+
+/* === header === */
+
+
+/* === HERO === */
+
+.hero{
+    padding-top: 229px;
+    padding-bottom: 305px;
+}
+
+.hero-title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.43;
+    text-align: center;
+    color:var(--hero-title-color) ;
+    margin-bottom: 60px;
+}
+
+.hero-button{
+    display: block;
+    margin: auto;
+    padding: 16px 31px;
+    background: var(--hero-button-color) ;
+    color: var(--hero-button-text-color) ;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.43;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    border: 0;
+}
+
+/* === PRODUCTS === */
+
+.products{
+    padding-top: 45px;
+    padding-bottom: 40px;
+    background-color: #FFFFFF;
+    margin-bottom: 70px;
+}
+
+.products-list{
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.product-svg{
+    fill: var(--products-color)
+}
+
+.products-list-item .wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.products-name{
+    font-size: 20px;
+    line-height: 1.43;
+    color:var(--products-color) ;
+}
+
+/* === VISION === */
+
+.vision{
+    background-image: url(../images/vision-bg.svg);
+    background-size: 1920px;
+    background-repeat: no-repeat;
+}
+
+.vision-title{
+    font-weight: 700;
+        font-size: 64px;
+        line-height: 1.43;
+        color: var(--vision-text-color);
+        margin-bottom: 25px;
+        margin-top: 106px;
+}
+
+.vision-text{
+    font-size: 20px;
+        line-height: 1.63;
+        color: var(--vision-text-color) ;
+        margin-top: 30px;
+}
+
+.vision-col{
+padding: 0 0 100px 30px;
+}
+
+.vision-col-text-right{
+    padding-left: 60px ;
+}
+
+.vision-col-text-left {
+    padding-right: 60px;
+}
+
+.vision-img{
+    filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.25));
+}
+
+
+
+/* === MAIN ACTIVITIES === */
+
+.main-activities .link, .main-activities .link:hover, .main-activities .link:focus{
+    color: inherit;
+}
+
+.main-activities{
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.ma-title{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.main-activities .x-icons{
+    display: block;
+    margin: auto;
+}
+
+
+.activities-image-wrapper{
+    width: 360px;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities-name{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.43;
+    color: var(--activities-color) ;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.activities-name::after{
+    display: block;
+    content: "";
+    width: 183px;
+    height: 1px;
+    margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--activities-color);
+}
+
+.activities-text{
+    font-size: 18px;
+        line-height: 1.43;
+        text-align: center;
+        color: ac;
+}
+
+/* ============================= HOMEPAGE END ============================= */
+
+
+
+
+
+/* ============================= TOMATO ALL START ============================= */
+
+.tomato-all-hero > img{
+    display: block;
+}
+
+
+/* === TOMATO INFO === */
+
+.tomato-info{
+    padding: 50px 0 33px 0;
+}
+
+.tomato-info-title{
+    margin-bottom: 40px;
+}
+
+.tomato-info .x-icons{
+    margin-bottom: 40px;
+}
+
+.tomato-info-desc{
+    font-size: 17px;
+        line-height: 1.5;
+        color: var(--tomato-info-text-color);
+        margin-bottom: 20px;
+}
+
+.tomato-info-small-desc {
+    padding: 0 26px;
+    border-left: 4px solid #EB5757;
+    border-radius: 4px;
+}
+
+
+/* === TOMATO CARDS === */
+.tomato-cards{
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+}
+
+.tomato-cards-title{
+    font-weight: 700;
+        font-size: 20px;
+        line-height: 1.43;
+    color: var(--tomato-cards-title-color);
+}
+
+.tomato-cards-title::after {
+content: '';
+    display: block;
+    margin-top: 15px ;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color: var(--tomato-cards-title-color);
+    margin-bottom: 15px;
+}
+
+
+/* === TOMATO SMALL TEXT === */
+
+.tomato-small-text{
+    padding: 47px 0;
+}
+
+
+/* === TOMATO LINKS CARDS === */
+.tomato-links-cards{
+    padding-bottom: 50px;
+}
+
+
+.tomato-link-card-col{
+    background-color: #FFFFFF;
+    padding-bottom: 30px ;
+}
+
+.tomato-link, .tomato-link:focus, .tomato-link:hover{
+    text-align: center;
+    color: var(--tomato-links-cards-text-color);
+}
+
+/* ============================= TOMATO ALL END ============================= */
+
+
+
+
+
+
+
+/* ============================= TOMATO ONE START ============================= */
+
+
+.back-to-all-tomatoes{
+    color: #57984C;
+    fill: #57984C;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-svg{
+    width: 24px;
+    height: 23px;
+}
+
+.tag-1002{
+    background-image: url(../images/tomato-one-bg.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.tag-title{
+    font-weight: 700;
+        font-size: 54px;
+        line-height: 1.43;
+        color: #57984C  ;
+        
+}
+
+.tag-title span{
+    color: #324950;
+}
+
+.tag-1002 .x-icons{
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+
+.tag-1002 .wrapper{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.tag-1002-small-title{
+    font-weight: 700;
+    margin-left: 23px;
+        font-size: 30px;
+        line-height: 1.43;
+
+        color: #CF2333;
+}
+
+.char-title{
+    font-weight: 700;
+        font-size: 20px;
+        line-height: 1.43;
+        /* identical to box height, or 29px */
+    
+    
+        /* Buttons */
+    
+        color: #57984C;
+}
+
+.char-title::after{
+    content: "";
+
+    margin-top: 12px;
+    margin-bottom: 24px;
+    width: 183px;
+    height: 1px;
+    background-color: #57984C;
+    display: block;
+}
+
+.char-text{
+        font-size: 17px;
+        line-height: 1.63;
+        /* or 28px */
+    
+    
+        /* Text color */
+    
+        color: #324950;
+}
+
+.char-text span{
+        font-weight: 700;
+}
+
+.download{
+    font-weight: 700;
+        font-size: 17px;
+        line-height: 2;
+        /* identical to box height, or 34px */
+    
+    
+        /* Buttons */
+    
+        color: #57984C;
+        padding: 11px 28px;
+        border: 2px solid #57984C;
+        border-radius: 60px;
+        width: 225px;
+        margin-left: auto;
+}
+
+.characteristics{
+    margin-top: 30px;
+    color: #57984C;
+}
+
+.char-row{
+    margin-top: 30px;
+}
+
+.for-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.char-list-text{
+    font-size: 17px;
+        line-height: 2;
+        /* or 34px */
+    
+    
+        /* Text color */
+    
+        color: #324950;
+}
+
+/* ============================= TOMATO ONE END ============================= */
+
+
+
+
+
+
+
+/* ============================= CONTACT US START ============================= */
+
+.contact-us-hero > img{
+    display: block;
+}
+
+.contact-us-form{
+    padding-top: 50px;
+}
+
+.contact-us-form .form-title{
+    margin-bottom: 40px;
+}
+
+.contact-us-form .x-icons{
+    margin-bottom: 50px;
+}
+
+.input-name{
+    font-size: 17px;
+    line-height: 1.5;
+    color: #324950;
+}
+
+.input-class{
+    width: 100%;
+    height: 55px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+
+    font-size: 17px;
+    line-height: 1.5;
+    color: #324950;
+    padding-left: 10px;
+    margin-bottom: 21px;
+    margin-top: 10px;
+}
+
+.capcha{
+    display: flex;
+    align-items: baseline;
+}
+
+.capcha-item{
+    margin-right: 26px ;
+}
+
+.form-button{
+    background: #57984C;
+    border-radius: 60px;
+    font-size: 17px;
+    line-height: 200%;
+    color: #FFFFFF;
+    width: 100%;
+    border: 0;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-end{
+    margin-bottom: 0;
+}
+
+.last-row{
+    padding-bottom: 50px;
+}
+
+/* === address info === */
+
+.address-info{
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+
+.address-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.43;    
+    color: #57984C;
+}
+
+.address-title::after{
+    content: "";
+    width: 183px;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 17px;
+    background-color: #57984C;
+}
+
+.address-text{
+    font-size: 17px;
+        line-height: 1.5;
+        color: #324950;
+}
+
+.address-tel{
+    color:#57984C;
+}
+
